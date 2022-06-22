@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:instagram_ui/screens/home_page.dart';
 
 void main() => runApp(MyApp());
 
@@ -10,7 +11,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: _title,
-      theme: ThemeData(brightness: Brightness.dark,appBarTheme: AppBarTheme(elevation: 0)),
+      theme: ThemeData(brightness: Brightness.dark,appBarTheme: AppBarTheme(elevation: 0,color: Colors.transparent)),
       home: MainPage(),
     );
   }
@@ -25,10 +26,7 @@ class _MainPageState extends State<MainPage> {
   int _selectedIndex = 0;
   static const TextStyle optionStyle = TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
   static const List<Widget> _widgetOptions = <Widget>[
-    Text(
-      'Index 0: Home',
-      style: optionStyle,
-    ),
+    HomePage(),
     Text(
       'Index 1: search',
       style: optionStyle,
@@ -41,10 +39,7 @@ class _MainPageState extends State<MainPage> {
       'Index 3: favorite',
       style: optionStyle,
     ),
-    Text(
-      'Index 4: profile',
-      style: optionStyle,
-    ),
+    ProfilePage(),
   ];
 
   List appBarWidgets = [
