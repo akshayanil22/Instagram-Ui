@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:instagram_ui/screens/home_page.dart';
+import 'package:instagram_ui/screens/profile_page.dart';
 
 void main() => runApp(MyApp());
 
@@ -23,9 +24,9 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
-  int _selectedIndex = 0;
+  int _selectedIndex = 4;
   static const TextStyle optionStyle = TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
-  static const List<Widget> _widgetOptions = <Widget>[
+  static List<Widget> _widgetOptions = <Widget>[
     HomePage(),
     Text(
       'Index 1: search',
@@ -55,9 +56,11 @@ class _MainPageState extends State<MainPage> {
         Text('Search'),
       ],
     ),)),
-    AppBar(),
+    PreferredSize(
+        preferredSize: Size.zero,
+        child: SizedBox()),
     AppBar(title: Text('Activity'),),
-    AppBar(title: Text('Username'),actions: [Icon(Icons.add_box_outlined),SizedBox(width: 10,),Icon(Icons.menu),SizedBox(width: 10,)],),
+    AppBar(title: Text('dulquerSalman__'),actions: [Icon(Icons.add_box_outlined),SizedBox(width: 10,),Icon(Icons.menu),SizedBox(width: 10,)],),
 
   ];
 

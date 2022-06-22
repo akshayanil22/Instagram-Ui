@@ -44,7 +44,7 @@ class CustomProfileWidget extends StatelessWidget {
                 )
               ],
             ),
-            isPost?SizedBox():Text('username')
+            isPost?SizedBox():Text(userName)
           ],
         ),
       ],
