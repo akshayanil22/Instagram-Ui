@@ -14,7 +14,7 @@ class ProfilePage extends StatelessWidget {
                 userName: 'Dulquer Salman',
                 hasStory: false,
                 imageUrl:
-                    'https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-bsnudco08r3igtj44duecnr7m4-20180203230738.Medi.jpeg'),
+                    'dq.jpg'),
             Column(
               children: [Text('4'), Text('Posts')],
             ),

@@ -56,7 +56,7 @@ class CustomPostWidget extends StatelessWidget {
         SizedBox(height: 10,),
         Row(
           children: [
-            CustomProfileWidget(radius:40,hasStory:false,isPost:true,imageUrl: 'https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-bsnudco08r3igtj44duecnr7m4-20180203230738.Medi.jpeg',),
+            CustomProfileWidget(radius:40,hasStory:false,isPost:true,imageUrl: 'dq.jpg',),
             SizedBox(width: 10,),
             Text('Add a comment...',style: TextStyle(color: Colors.grey),),
             Spacer(),

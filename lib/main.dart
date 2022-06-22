@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:instagram_ui/screens/home_page.dart';
 import 'package:instagram_ui/screens/profile_page.dart';
+import 'package:instagram_ui/screens/search_page.dart';
 
 void main() => runApp(MyApp());
 
@@ -24,14 +25,11 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
-  int _selectedIndex = 4;
+  int _selectedIndex = 0;
   static const TextStyle optionStyle = TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
   static List<Widget> _widgetOptions = <Widget>[
     HomePage(),
-    Text(
-      'Index 1: search',
-      style: optionStyle,
-    ),
+    SearchPage(),
     Text(
       'Index 2: reel',
       style: optionStyle,

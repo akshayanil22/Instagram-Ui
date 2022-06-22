@@ -14,15 +14,12 @@ class StorySection extends StatelessWidget {
       child: ListView(
         scrollDirection: Axis.horizontal,
         children: [
-          CustomProfileWidget(isUser:true,hasStory:false,imageUrl: 'https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-bsnudco08r3igtj44duecnr7m4-20180203230738.Medi.jpeg'),
-          CustomProfileWidget(imageUrl: 'https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-bsnudco08r3igtj44duecnr7m4-20180203230738.Medi.jpeg'),
-          CustomProfileWidget(imageUrl: 'https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-bsnudco08r3igtj44duecnr7m4-20180203230738.Medi.jpeg'),
-          CustomProfileWidget(imageUrl: 'https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-bsnudco08r3igtj44duecnr7m4-20180203230738.Medi.jpeg'),
-          CustomProfileWidget(imageUrl: 'https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-bsnudco08r3igtj44duecnr7m4-20180203230738.Medi.jpeg'),
-          CustomProfileWidget(imageUrl: 'https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-bsnudco08r3igtj44duecnr7m4-20180203230738.Medi.jpeg'),
-          CustomProfileWidget(imageUrl: 'https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-bsnudco08r3igtj44duecnr7m4-20180203230738.Medi.jpeg'),
-          CustomProfileWidget(imageUrl: 'https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-bsnudco08r3igtj44duecnr7m4-20180203230738.Medi.jpeg'),
-
+          CustomProfileWidget(
+              isUser: true, hasStory: false, imageUrl: 'dq.jpg',userName: 'Your story',),
+          CustomProfileWidget(imageUrl: 'asifali.jfif',userName: 'Asif Ali',),
+          CustomProfileWidget(imageUrl: 'mohanlal.jfif',userName: 'Mohanlal',),
+          CustomProfileWidget(imageUrl: 'Mammootty.jfif',userName: 'Mammotty',),
+          CustomProfileWidget(imageUrl: 'prithwiraj.jfif',userName: 'PrithwiRaj',),
         ],
       ),
     );

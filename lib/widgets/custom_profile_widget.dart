@@ -24,7 +24,7 @@ class CustomProfileWidget extends StatelessWidget {
                   width: radius,
                   height: radius,
                   decoration: BoxDecoration(
-                    image: DecorationImage(image: NetworkImage(imageUrl),fit: BoxFit.cover),
+                    image: DecorationImage(image: AssetImage('assets/'+imageUrl),fit: BoxFit.cover),
                       color: Colors.black,
                       border:hasStory? Border.all(color: Colors.pink, width: 3):null,
                       borderRadius: BorderRadius.circular(radius/2)),
