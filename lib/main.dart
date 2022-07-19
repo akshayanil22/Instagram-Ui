@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:instagram_ui/screens/activity_page.dart';
 import 'package:instagram_ui/screens/home_page.dart';
 import 'package:instagram_ui/screens/profile_page.dart';
+import 'package:instagram_ui/screens/reels_page.dart';
 import 'package:instagram_ui/screens/search_page.dart';
 
 void main() => runApp(MyApp());
@@ -31,10 +32,7 @@ class _MainPageState extends State<MainPage> {
   static List<Widget> _widgetOptions = <Widget>[
     HomePage(),
     SearchPage(),
-    Text(
-      'Index 2: reel',
-      style: optionStyle,
-    ),
+    ReelsPage(),
     ActivityPage(),
     ProfilePage(),
   ];
