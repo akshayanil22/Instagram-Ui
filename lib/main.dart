@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:instagram_ui/screens/activity_page.dart';
 import 'package:instagram_ui/screens/home_page.dart';
 import 'package:instagram_ui/screens/profile_page.dart';
 import 'package:instagram_ui/screens/search_page.dart';
@@ -34,10 +35,7 @@ class _MainPageState extends State<MainPage> {
       'Index 2: reel',
       style: optionStyle,
     ),
-    Text(
-      'Index 3: favorite',
-      style: optionStyle,
-    ),
+    ActivityPage(),
     ProfilePage(),
   ];
 

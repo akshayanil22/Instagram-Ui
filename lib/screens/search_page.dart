@@ -8,14 +8,14 @@ class SearchPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return GridView.custom(
       gridDelegate: SliverQuiltedGridDelegate(
-        crossAxisCount: 4,
+        crossAxisCount: 3,
         mainAxisSpacing: 3,
         crossAxisSpacing: 4,
         repeatPattern: QuiltedGridRepeatPattern.inverted,
         pattern: [
-          QuiltedGridTile(3, 2),
           QuiltedGridTile(1, 1),
           QuiltedGridTile(1, 1),
+          QuiltedGridTile(2, 1),
           QuiltedGridTile(1, 1),
           QuiltedGridTile(1, 1),
         ],
